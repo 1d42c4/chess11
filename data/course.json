@@ -1,0 +1,4926 @@
+{
+  "repo": "chess11",
+  "title": "See the Board",
+  "subtitle": "A human guide to noticing what matters",
+  "color": "#176b58",
+  "audience": "New players and improving club players who miss threats or leave pieces loose.",
+  "promise": "Build a repeatable board scan, understand legal threats, and finish every move with a useful safety check.",
+  "modules": [
+    "Map the board",
+    "See contact and danger",
+    "Make a safe decision",
+    "Turn attention into a habit"
+  ],
+  "lessons": [
+    {
+      "title": "A map you can think on",
+      "module": 0,
+      "goal": "Name squares without turning the board into a memory test.",
+      "teach": "Coordinates are addresses, not extra chess theory. Files run a–h from White’s left to right; ranks run 1–8 from White toward Black. Those names stay fixed when the board is rotated. Use the four central squares as anchors: d4, e4, d5, e5. Then locate a target relative to an anchor instead of recounting the whole board. A stable map makes a spoken line or written move much easier to retain.",
+      "example": "A knight on f3 is one file right and one rank below e4 from White’s view. On a board shown from Black’s side it is still on f3. The picture changed; the address did not.",
+      "task": "Point to a1, h8, e4, d5, and f3. Rotate the board and find them again. Work accurately before trying to beat a time.",
+      "answer": "The same five squares must be identified in both orientations. If rotation causes errors, name the file and rank separately before pointing.",
+      "trap": "Learning squares only from White’s view makes Black positions unnecessarily difficult.",
+      "recall": "Do square names change when the board is flipped? No. Only their position on your screen changes.",
+      "number": 1,
+      "id": "lesson-01"
+    },
+    {
+      "title": "Read the whole position first",
+      "module": 0,
+      "goal": "Notice side to move, kings, and material before choosing a move.",
+      "teach": "Before solving a diagram, orient yourself. Identify whose turn it is, where both kings are, and which pieces remain. Then check whether the moving side is in check. This prevents solving an imagined position rather than the actual one. In a real game, remember the last move as well: it changed at least two squares and may have opened a line. You do not need a numerical evaluation yet.",
+      "example": "A rook attacking a queen looks tempting, but if your king is in check elsewhere you must first answer the check. The order of attention changes which moves are legal candidates.",
+      "task": "For five unfamiliar diagrams, say only: side to move, king squares, check or no check, and material imbalance. Do not suggest a move.",
+      "answer": "A good orientation report is short and factual. A material imbalance names the extra pieces or pawns, rather than declaring a winner.",
+      "trap": "Reading the puzzle caption as a promise that a sacrifice must work.",
+      "recall": "What comes before candidate moves? Orient the board and establish the immediate legal situation.",
+      "number": 2,
+      "id": "lesson-02"
+    },
+    {
+      "title": "Pieces draw different maps",
+      "module": 0,
+      "goal": "Recognize attacks as geometry with blockers.",
+      "teach": "Rooks trace ranks and files, bishops trace diagonals, and queens combine both. A friendly piece stops a sliding ray; an enemy piece is the first possible capture and also stops the ray. Knights jump to an L-shaped destination. Kings control adjacent squares. Pawns control diagonally forward, which differs from how they advance. Make these maps explicit until you can see them quickly.",
+      "example": "A rook on a1 with a friendly pawn on a3 can move to a2 but cannot move to a4. The pawn does not become transparent just because the rook would like the open file.",
+      "task": "Choose one piece. Trace every direction until the first occupied square or board edge. For each endpoint, say move, capture, or blocked.",
+      "answer": "For a slider, everything beyond its first blocker is currently inaccessible on that ray. A knight ignores intervening squares but still cannot land on a friendly piece.",
+      "trap": "Extending a bishop or rook’s influence through an intervening piece.",
+      "recall": "What ends a sliding line? The first occupied square or the edge of the board.",
+      "diagram": {
+        "fen": "7k/7p/8/8/8/P7/8/R5K1 w - - 0 1",
+        "caption": "The a3 pawn blocks the a1 rook. Trace the rook’s file only as far as the first occupied square."
+      },
+      "number": 3,
+      "id": "lesson-03"
+    },
+    {
+      "title": "Pawns: movement is not control",
+      "module": 0,
+      "goal": "Separate pawn advances from pawn attacks.",
+      "teach": "A White pawn on e4 advances toward e5 and controls d5 and f5. A Black pawn on e5 advances toward e4 and controls d4 and f4. A pawn cannot capture straight ahead, and its diagonal control matters even when the diagonal squares are empty. Its initial two-square advance is permitted only from its starting rank with both squares clear. Every pawn move changes squares it controls and cannot be undone.",
+      "example": "Putting a knight on d5 may be unsafe because of a Black pawn on c6, even when d5 is empty before the knight arrives. Look at the pawn’s control, not just at possible captures in the current position.",
+      "task": "For every pawn in one middlegame position, name its two forward diagonal squares and mark those still on the board.",
+      "answer": "Edge pawns have only one on-board attack square. A blocked pawn still controls its diagonals.",
+      "trap": "Assuming a pawn that cannot advance has stopped influencing the board.",
+      "recall": "Does a blocked pawn still attack? Yes; blockage of its forward move does not remove diagonal control.",
+      "diagram": {
+        "fen": "7k/7p/8/4p3/4P3/8/8/K7 w - - 0 1",
+        "caption": "The e-pawns block each other’s advance but still control their forward diagonals."
+      },
+      "number": 4,
+      "id": "lesson-04"
+    },
+    {
+      "title": "Knight vision without guessing",
+      "module": 0,
+      "goal": "Find all knight destinations systematically.",
+      "teach": "From its square, a knight moves two files and one rank, or two ranks and one file. Work clockwise around the eight potential destinations and discard those off the board. It helps to remember that a knight always changes square color. That color rule detects mistakes but does not identify the move by itself. Central knights have more possible destinations than corner knights.",
+      "example": "From e4 the geometric destinations are c3, c5, d2, d6, f2, f6, g3, and g5. Occupancy and king safety determine which are legal moves.",
+      "task": "List the destinations from a1, d4, and h8 without moving a piece. Then use a board to check.",
+      "answer": "a1 reaches b3 and c2. h8 reaches f7 and g6. A central d4 knight has eight geometric destinations before occupancy is considered.",
+      "trap": "Confusing an attacked square with a legal destination in a pinned-knight position.",
+      "recall": "How can square color help? A legal knight move changes color, but many opposite-color squares are not knight moves.",
+      "diagram": {
+        "fen": "7k/7p/8/8/3N4/8/8/K7 w - - 0 1",
+        "caption": "Find the eight geometric destinations from d4, then distinguish them from the king’s moves."
+      },
+      "number": 5,
+      "id": "lesson-05"
+    },
+    {
+      "title": "King safety is a legality test",
+      "module": 0,
+      "goal": "Understand why some attractive moves do not exist.",
+      "teach": "A move is illegal if it leaves your own king attacked. This includes moving a pinned piece off a critical line, failing to answer check, and moving the king onto an attacked square. Kings also attack adjacent squares, so they cannot stand next to one another. Test the position after the proposed move, because moving or capturing a blocker can reveal a new attack.",
+      "example": "A White king cannot capture a Black piece protected by a Black pawn. Count the pawn’s attack even if the pawn appears pinned to its own king: for king-move legality, the square is still attacked under the laws of chess.",
+      "task": "Find three king captures in a diagram. For each, remove the captured piece mentally and trace every enemy attack to the king’s destination.",
+      "answer": "A king capture is allowed only if the resulting square is not attacked. The fact that a capture wins material is irrelevant to legality.",
+      "trap": "Checking the old board instead of the board after the capture.",
+      "recall": "When do you test king safety? In the resulting position after the entire move has been made.",
+      "diagram": {
+        "fen": "7k/7p/8/8/4p3/3r4/2K5/8 w - - 0 1",
+        "caption": "Kxd3 is illegal: the e4 pawn attacks d3 after the rook is removed."
+      },
+      "number": 6,
+      "id": "lesson-06"
+    },
+    {
+      "title": "The last move changed something",
+      "module": 1,
+      "goal": "Use the opponent’s move as a cue for a fresh scan.",
+      "teach": "Ask what the last move vacated, occupied, attacked, and stopped defending. A quiet retreat can uncover a rook, defend a mating square, or prepare a pawn break. Start with those concrete changes before inventing a long strategic story. This habit is economical: it focuses attention on the part of the board most likely to have new information.",
+      "example": "A bishop leaving e7 may uncover a rook on e8. Your queen on e2 could now be on that rook’s file even though the bishop moved toward the queenside.",
+      "task": "After each opponent move in a slow practice game, state one changed attack and one changed defense before looking for your move.",
+      "answer": "Sometimes there is no new direct attack. Naming an opened line or a newly unprotected square is still a useful observation.",
+      "trap": "Looking only at the destination of the opponent’s piece.",
+      "recall": "What are the four changes to inspect? Vacated square, occupied square, new attacks, and defenses that disappeared.",
+      "number": 7,
+      "id": "lesson-07"
+    },
+    {
+      "title": "Loose pieces are warning lights",
+      "module": 1,
+      "goal": "Spot undefended pieces without assuming they can be won.",
+      "teach": "A loose piece has no friendly defender, or only an unreliable tactical defender. It is a target to investigate, not automatically a free capture. Two loose pieces may allow a fork or double attack; an undefended piece near the king may support a forcing combination. List your own loose pieces too. This turns a vague sense of danger into specific objects to check.",
+      "example": "Two undefended rooks can be perfectly safe if no enemy piece can attack them together. A queen check that attacks one rook at the same time can change that instantly.",
+      "task": "Mark every undefended non-pawn piece for both sides. Pick the pair that could plausibly be attacked by one enemy move.",
+      "answer": "Your conclusion should name an attacking piece and a possible route. A list of undefended pieces alone is only the start of calculation.",
+      "trap": "Capturing a loose piece without checking for mate or an intermediate move.",
+      "recall": "Does undefended mean lost? No. The opponent still needs a legal, effective way to exploit it.",
+      "number": 8,
+      "id": "lesson-08"
+    },
+    {
+      "title": "Count attackers, then question the count",
+      "module": 1,
+      "goal": "Use attack counts as a first pass rather than a verdict.",
+      "teach": "When several pieces contest a square, count attackers and defenders to avoid obvious mistakes. Then ask about their values, capture order, pins, and forcing alternatives. Equal counts can conceal a losing exchange when your queen must recapture a pawn defended by a rook. A king may be counted geometrically but unable to recapture onto an attacked square.",
+      "example": "One knight attacks a pawn defended once by a rook. “One against one” does not make N×pawn safe: after the rook recaptures, a knight has been traded for a pawn unless another tactic changes the sequence.",
+      "task": "Choose a contested square. Write the likely capture sequence with piece names and calculate the net material result.",
+      "answer": "Count what was actually removed for each side. Stop only when the position is quiet enough to assess; an intermediate check can alter the sequence.",
+      "trap": "Using arithmetic about attackers as a substitute for calculating captures.",
+      "recall": "What follows the count? Test the actual exchange sequence and any forcing interruption.",
+      "number": 9,
+      "id": "lesson-09"
+    },
+    {
+      "title": "Pins: a defender may have another job",
+      "module": 1,
+      "goal": "Distinguish absolute pins from relative pins.",
+      "teach": "An absolute pin ties a piece to its king: moving off the line would expose check and is illegal. A relative pin ties it to a more valuable piece or another important target; moving may be legal but costly. A pinned piece can sometimes move along the pinning line, capture the attacker, or help create a counterthreat. Name the line and the object behind the pinned piece.",
+      "example": "A knight between an enemy rook and its own king on the same file cannot jump away if that exposes the king. A bishop pinned to a queen can move legally, but the queen may then fall.",
+      "task": "In a pin, identify attacker, pinned piece, and protected object. Test one move along the line and one off it.",
+      "answer": "Only an exposed king makes the off-line move illegal. Other losses are tactical consequences, not violations of the move rules.",
+      "trap": "Treating every pinned piece as completely immobile.",
+      "recall": "What makes a pin absolute? Moving the piece off the line would expose its own king to check.",
+      "diagram": {
+        "fen": "4k3/4n3/8/8/8/8/8/K3R3 w - - 0 1",
+        "caption": "The e7 knight is absolutely pinned to the e8 king by the e1 rook."
+      },
+      "number": 10,
+      "id": "lesson-10"
+    },
+    {
+      "title": "X-rays and hidden lines",
+      "module": 1,
+      "goal": "Notice what would happen if a blocker disappeared.",
+      "teach": "A slider may have an important target behind one or more pieces even when it cannot currently attack it directly. Read the line from attacker to blocker to target. Ask which side can remove the blocker and whether that removal comes with check or another threat. Hidden alignments explain many “sudden” tactics that were visible before the first capture.",
+      "example": "Your rook, an enemy bishop, and the enemy queen share a file. Capturing or chasing the bishop may reveal an attack on the queen. Whether it works depends on whose move it is and whether the rook survives.",
+      "task": "Find three alignments containing a rook, bishop, or queen. Name the first blocker and the target beyond it.",
+      "answer": "An alignment is a tactical clue. You still need a legal sequence that clears the line at an acceptable cost.",
+      "trap": "Calling an x-ray a current legal attack through a blocker.",
+      "recall": "What question turns an alignment into a candidate? Can the blocker be moved or removed with tempo?",
+      "number": 11,
+      "id": "lesson-11"
+    },
+    {
+      "title": "Check is not the same as a threat",
+      "module": 1,
+      "goal": "Give immediate checks priority without overreacting to every attack.",
+      "teach": "Check must be answered now. An attack on a queen usually deserves attention, but a stronger forcing move may make saving it unnecessary. A threat describes what the opponent intends next; it may be stopped directly, neutralized indirectly, or outrun by a forcing sequence. Separate legal obligation from practical urgency so you neither ignore check nor automatically retreat from every attack.",
+      "example": "If your queen is attacked but you can deliver checkmate, the game ends before the queen can be captured. If your king is in check, that mating move is usable only if it also legally answers the check.",
+      "task": "For three positions, state: “I must answer check” or “I must evaluate the threat.” List legal forcing replies before routine retreats.",
+      "answer": "A candidate that leaves your king attacked is eliminated immediately, however attractive its threat looks.",
+      "trap": "Treating an attacked queen as if it were a checked king.",
+      "recall": "Which attack creates an immediate legal obligation? An attack on your king: check.",
+      "number": 12,
+      "id": "lesson-12"
+    },
+    {
+      "title": "Three ways out of check",
+      "module": 2,
+      "goal": "Generate check evasions without panic.",
+      "teach": "A check can be answered by moving the king, capturing the checking piece, or interposing a piece when the attack travels along a line. Each candidate must leave the king safe from every attacker. Knight checks and adjacent-piece checks cannot be blocked. In double check, the king must move because answering only one attacking line is insufficient.",
+      "example": "A bishop checking along a long diagonal may permit a block. A knight checking from f7 cannot be answered by putting a piece between knight and king.",
+      "task": "In one sliding-piece check, list the three categories before calculating. In a knight check, cross out interposition.",
+      "answer": "The categories help generate possibilities; the board may leave only one legal move or none. No legal evasion while in check means checkmate.",
+      "trap": "Finding a block that stops one line but exposes another.",
+      "recall": "Can you block a knight check? No. Move the king or legally capture the checking knight.",
+      "number": 13,
+      "id": "lesson-13"
+    },
+    {
+      "title": "A five-question safety scan",
+      "module": 2,
+      "goal": "Use a short routine that survives real games.",
+      "teach": "After the opponent moves, ask: Am I in check? What changed? What is attacked? What is loose? What forcing moves exist for both sides? Keep the answers concrete and brief. The routine is a doorway into calculation, not a demand to solve every possibility. In a quiet position, it should finish quickly and leave time for a plan.",
+      "example": "“My king is safe; the bishop moved and opened the e-file; my queen is on that file; the rook is undefended; I should examine checks and queen-saving moves.” This is more useful than “I feel worse.”",
+      "task": "Write the five questions on a card. Use them before ten moves in a training game and record which question caught a real issue.",
+      "answer": "Success means detecting a concrete change earlier, not mechanically repeating words while ignoring the board.",
+      "trap": "Making the checklist so long that you abandon it under time pressure.",
+      "recall": "What is the scan for? Finding urgent facts and useful candidates before deeper calculation.",
+      "number": 14,
+      "id": "lesson-14"
+    },
+    {
+      "title": "Imagine the opponent gets a turn",
+      "module": 2,
+      "goal": "Perform a final blunder check on your chosen move.",
+      "teach": "Before committing, place the intended move on your mental board and switch sides. Examine the opponent’s checks, captures, and immediate threats. Pay special attention to the square you vacated and the piece you stopped defending. This is different from asking whether your move has a good idea: you are actively trying to refute it.",
+      "example": "A knight move attacks a rook but abandons the defense of your queen. From your side it looks active; from the opponent’s side a simple queen capture may settle the matter.",
+      "task": "Take your last three blunders. Recreate the position just before each and ask which opponent reply the final scan should have found.",
+      "answer": "Name the missed reply and the reason it became possible. “Careless” is less useful than “I stopped defending d2.”",
+      "trap": "Checking the opponent’s reply only before selecting a move, not after mentally making it.",
+      "recall": "Which side do you think for during the final scan? Your opponent, in the resulting position.",
+      "number": 15,
+      "id": "lesson-15"
+    },
+    {
+      "title": "Material values need a position",
+      "module": 2,
+      "goal": "Use piece values as estimates rather than commandments.",
+      "teach": "The familiar pawn 1, knight 3, bishop 3, rook 5, queen 9 scale helps compare ordinary exchanges. It is not a law about every position. A trapped rook can be less useful than an active minor piece; a mating attack overrides a material deficit. First calculate the material transaction accurately, then evaluate king safety, activity, and pawn threats.",
+      "example": "Trading a rook for a bishop usually costs roughly two pawns of material value. If that exchange forces mate, the material price does not change the result. If the attack is only hopeful, the deficit still matters.",
+      "task": "Write the material balance after a proposed sequence twice: first as actual pieces and pawns, then as an approximate point difference.",
+      "answer": "The piece inventory is the reliable record. The points are a shorthand to help evaluate it, not a replacement for the inventory.",
+      "trap": "Calling a sacrifice sound because the attacking position looks attractive.",
+      "recall": "When may material be ignored? Only when a concrete consequence, such as forced mate, makes it irrelevant.",
+      "number": 16,
+      "id": "lesson-16"
+    },
+    {
+      "title": "Safe development has a purpose",
+      "module": 2,
+      "goal": "Connect opening habits to the problems they solve.",
+      "teach": "Develop pieces toward useful squares, contest the center, and arrange king safety. These habits improve your options; they do not license ignoring tactics. Repeatedly moving one piece may be justified by a threat, while mechanically developing a new piece may lose material. Ask what your developing move controls and what it leaves behind.",
+      "example": "Nf3 often develops a knight and influences e5 and d4. Its usefulness depends on the pawn structure and immediate threats, not on a universal rule that every knight belongs there.",
+      "task": "After each of your first ten moves, name the move’s contribution to development, center, safety, or a necessary tactical response.",
+      "answer": "A move can serve more than one purpose. A move with no clear purpose deserves review, especially if it moved a piece already developed.",
+      "trap": "Using opening principles to excuse a move that fails a one-move safety check.",
+      "recall": "Do principles override tactics? No. They guide candidates; concrete threats still decide legality and safety.",
+      "number": 17,
+      "id": "lesson-17"
+    },
+    {
+      "title": "Castling is a route, not a shield",
+      "module": 2,
+      "goal": "Check castling conditions and the resulting king shelter.",
+      "teach": "Castling requires an unmoved king and the relevant unmoved rook, no pieces between them, and a king that is not in check and does not cross or finish on an attacked square. The rook’s square may be attacked. Legal castling is often useful, but the resulting king can still face an attack. Inspect open files, missing shelter pawns, and enemy pieces aimed at that wing.",
+      "example": "Queenside castling can be legal even if b1 is attacked, because White’s king crosses d1 and lands on c1. The squares between king and rook must still be empty.",
+      "task": "Before castling in a diagram, check move history rights, empty path, current check, crossing square, and destination. Then evaluate the shelter.",
+      "answer": "A diagram alone may not prove castling rights; FEN or game history is needed to know whether king or rook previously moved.",
+      "trap": "Assuming castling is legal because the spaces between king and rook are empty.",
+      "recall": "Can you castle out of check? No, even if the final square would be safe.",
+      "number": 18,
+      "id": "lesson-18"
+    },
+    {
+      "title": "En passant and promotion without surprises",
+      "module": 3,
+      "goal": "Recognize the two pawn rules most likely to break a visual shortcut.",
+      "teach": "En passant is available immediately after an adjacent enemy pawn advances two squares from its starting square and lands beside your pawn on its fifth rank. The capturing pawn moves diagonally to the passed-over square and the advanced pawn is removed. The resulting position must leave your king safe. Promotion happens on the last rank and is immediately to a queen, rook, bishop, or knight of the same color.",
+      "example": "An en passant capture removes a pawn from a square other than the destination. That can open a rook’s rank and expose a king, making an otherwise plausible capture illegal.",
+      "task": "Set up an en passant position and physically remove both relevant pawns from their old squares before placing the capturing pawn on its destination.",
+      "answer": "Only the just-advanced pawn is captured. Waiting a turn loses the en passant opportunity. Promotion is part of the pawn move, not a later turn.",
+      "trap": "Leaving the captured en passant pawn on the mental board.",
+      "recall": "What is special about en passant visualization? The captured pawn is removed from a different square than the capturing pawn lands on.",
+      "number": 19,
+      "id": "lesson-19"
+    },
+    {
+      "title": "Checkmate, stalemate, and a saved half-point",
+      "module": 3,
+      "goal": "Distinguish no legal moves with check from no legal moves without it.",
+      "teach": "Checkmate means the side to move is in check and has no legal move. Stalemate means the side to move is not in check and has no legal move; the game is drawn. A king that appears trapped may still have a legal move elsewhere through another piece. Count all legal moves, not just king moves, before declaring either result.",
+      "example": "With Black’s king on h8, White’s king on f7, and White’s queen on g6, Black to move has no legal move and is not checked: stalemate. Moving the queen to g7 instead gives check and covers the relevant escapes, producing mate in that arrangement.",
+      "task": "Build both positions on a board. For each, test check first, then g8, g7, and h7 as possible king moves.",
+      "answer": "In the first diagram the queen does not attack h8; in the second it does. King protection and escape-square coverage complete the distinction.",
+      "trap": "Celebrating a trapped enemy king before checking whether it is actually attacked.",
+      "recall": "What separates mate from stalemate? Whether the player with no legal move is in check.",
+      "diagram": {
+        "fen": "7k/5K2/6Q1/8/8/8/8/8 b - - 0 1",
+        "caption": "Black to move: stalemate, not checkmate. Inspect g8, g7, and h7."
+      },
+      "number": 20,
+      "id": "lesson-20"
+    },
+    {
+      "title": "Spend attention where the board changed",
+      "module": 3,
+      "goal": "Allocate effort to critical moments instead of thinking equally on every move.",
+      "teach": "Use more time when a capture changes the center, a king becomes exposed, several forcing replies exist, or an irreversible pawn decision arrives. Quiet recaptures are not automatically easy, and dramatic moves are not automatically sound. Your scan identifies whether a position is critical; the clock then limits how much you can investigate.",
+      "example": "Before exchanging into a pawn ending, a long pause may be worthwhile because one king tempo can change the result. Repeating a previously checked defensive move may require less time if nothing else changed.",
+      "task": "Review one game and label five moments “routine” or “critical.” Give a concrete reason for each label.",
+      "answer": "Useful reasons mention a new line, material decision, king exposure, or irreversible change. The opponent’s rating is not a property of the position.",
+      "trap": "Using all your time to prove a harmless move while rushing the decisive exchange.",
+      "recall": "Which decisions often justify extra time? Irreversible changes and positions with forcing alternatives.",
+      "number": 21,
+      "id": "lesson-21"
+    },
+    {
+      "title": "Diagnose a miss precisely",
+      "module": 3,
+      "goal": "Turn a blunder into a trainable skill.",
+      "teach": "A missed move can come from not seeing an attack, forgetting a piece during calculation, misjudging an exchange, or running out of time. Those problems need different exercises. Record the exact board fact you missed and the habit that might catch it next time. Review a small number of recurring mistakes rather than collecting a huge list of engine inaccuracies.",
+      "example": "“Lost a rook” describes the result. “I moved the defender without checking the rook behind it” identifies a process error and suggests a final-scan exercise.",
+      "task": "Choose one recent mistake. Fill in: trigger, missed fact, correct question, and one practice drill.",
+      "answer": "A useful drill resembles the missed skill. Knight-attack practice will not directly fix an error caused by entering a drawn pawn ending.",
+      "trap": "Treating every loss as proof that you need more opening memorization.",
+      "recall": "What is a good error label? A specific observation or decision you can practice.",
+      "number": 22,
+      "id": "lesson-22"
+    },
+    {
+      "title": "Accuracy first, speed second",
+      "module": 3,
+      "goal": "Build fluency without rewarding guesses.",
+      "teach": "Begin with untimed board scans. Once you reliably identify the right facts, shorten the allowed time gradually. Record accuracy alongside speed: faster guessing is not improvement. Revisit missed positions after a delay and explain the reason aloud before answering. The aim is to make simple observations cheap enough that your limited calculation effort can handle harder decisions.",
+      "example": "If you answer ten attack-count questions in a minute but miss four, slow down and trace the rays. Nine accurate answers at a calmer pace give you a better foundation.",
+      "task": "Do ten drills untimed, review every miss, and repeat a different set tomorrow. Only introduce a clock after several accurate sessions.",
+      "answer": "Track both the number correct and the reason for errors. A smaller error rate matters more than one unusually fast session.",
+      "trap": "Practicing only positions you already recognize because the score feels satisfying.",
+      "recall": "When should speed training begin? After the underlying observation is accurate and repeatable.",
+      "number": 23,
+      "id": "lesson-23"
+    },
+    {
+      "title": "Your board-vision graduation test",
+      "module": 3,
+      "goal": "Combine orientation, danger detection, and a final scan.",
+      "teach": "Use ten unseen positions and one slow game. For each diagram, orient the board, describe the last move if supplied, identify urgent threats, and choose a candidate. State the opponent’s strongest immediate reply before committing. In the game, use the same routine without trying to solve every position perfectly. Graduation means the routine survives uncertainty.",
+      "example": "A successful answer can be “I do not know the best move, but this candidate does not lose to the opponent’s immediate checks or captures, and it improves my worst piece.” Honest limits are more useful than an invented forced win.",
+      "task": "Complete the mixed practice set, then record three moments from a slow game where the scan influenced your decision.",
+      "answer": "Review every tactical oversight. Repeat the relevant module if misses cluster around pawn control, pins, or vacated lines. Move to calculation training when the scan feels usable.",
+      "trap": "Treating one high drill score as proof that blunders have been permanently eliminated.",
+      "recall": "What is the final aim? Reliable observation that supports better decisions in real games.",
+      "number": 24,
+      "id": "lesson-24"
+    }
+  ],
+  "drills": [
+    {
+      "id": "vision-001",
+      "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: knight on f3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-002",
+      "fen": "r1b1kb1r/1p1npppp/pq1p4/6B1/3NP3/1P6/P1P1QPPP/RN2K2R b KQkq - 1 9",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on d4: queen on b6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-003",
+      "fen": "rnb1kb1r/pp3pp1/2p1p3/6N1/P2P4/8/1P2nPPP/R3KBNR w KQ - 0 13",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-3"
+      ],
+      "options": [
+        {
+          "value": "-4",
+          "label": "-4"
+        },
+        {
+          "value": "-3",
+          "label": "-3"
+        },
+        {
+          "value": "-2",
+          "label": "-2"
+        },
+        {
+          "value": "-1",
+          "label": "-1"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 25 points and Black has 28: 25 − 28 = -3. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-004",
+      "fen": "N1bk4/1p4br/2n4p/p3pp1n/1PPp2pP/P2P3N/4PP2/1RBQKB1R b K - 0 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "h7",
+      "prompt": "How many legal moves does the Black rook on h7 have? Count captures as moves.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Rh8. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-005",
+      "fen": "rnbqk2r/1pp2ppp/p3p3/8/1bpPn2P/2N5/PPQ2PP1/R1B1KBNR b KQkq - 1 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "a8",
+      "prompt": "How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-006",
+      "fen": "r2q2nr/pp2kp1p/2nN1bp1/8/2PpPB2/5P1b/PP5P/1R1QK2R w K - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h1",
+      "prompt": "How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-007",
+      "fen": "1rk3nr/p5p1/4p3/1pP3p1/8/P4N2/1PP2P1b/R2K4 b - - 1 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-8"
+      ],
+      "options": [
+        {
+          "value": "-9",
+          "label": "-9"
+        },
+        {
+          "value": "-8",
+          "label": "-8"
+        },
+        {
+          "value": "-7",
+          "label": "-7"
+        },
+        {
+          "value": "-6",
+          "label": "-6"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 13 points and Black has 21: 13 − 21 = -8. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-008",
+      "fen": "r1bqk1nr/ppp1b1pp/2np4/P3pp2/2B1P3/3P4/1PPN1PPP/RNBQ1RK1 b kq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "h8",
+      "prompt": "How many legal moves does the Black rook on h8 have? Count captures as moves.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-009",
+      "fen": "r2q1b1r/ppnbp2p/4kp2/P2p2p1/1P2P3/1P1B3P/3NKPP1/R1B4R w - - 2 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e6",
+      "prompt": "How many White pieces geometrically attack e6? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on e6: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-010",
+      "fen": "r2k3r/2p3pp/p3p3/q4p1P/1nPP4/4P3/P1PK2P1/5RN1 b - - 1 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "g1",
+      "prompt": "How many Black pieces geometrically attack g1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on g1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-011",
+      "fen": "r1bqkbnr/1pp2ppp/2np4/3Np3/1p2P3/5N2/PPPP1PPP/R1BQ1RK1 w kq - 0 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-3"
+      ],
+      "options": [
+        {
+          "value": "-4",
+          "label": "-4"
+        },
+        {
+          "value": "-3",
+          "label": "-3"
+        },
+        {
+          "value": "-2",
+          "label": "-2"
+        },
+        {
+          "value": "-1",
+          "label": "-1"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 36 points and Black has 39: 36 − 39 = -3. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-012",
+      "fen": "r1bq1rk1/ppn2p2/1N3b1p/3pp3/2P5/2N5/PPQ1PPPP/R3KB1R b KQ - 1 14",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "c7",
+      "prompt": "How many legal moves does the Black knight on c7 have? Count captures as moves.",
+      "answers": [
+        "4"
+      ],
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Ne8, Ne6, Nb5, Na6. There are 4. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-013",
+      "fen": "r1b2r2/ppp3k1/6pp/q1P5/Pn3B2/1Pp1R3/6Pn/2KQ1B1R w - - 1 22",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f8",
+      "prompt": "How many White pieces geometrically attack f8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on f8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-014",
+      "fen": "rnbqkb1r/ppp2ppp/8/3np3/8/P1N3PB/1P1PPP1P/R1BQK1NR w KQkq - 2 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "c3",
+      "prompt": "How many Black pieces geometrically attack c3? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on c3: knight on d5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-015",
+      "fen": "r1b3n1/p1p1k1p1/1Pnp3B/4p2p/3PP3/5qP1/P1P2P1P/R2QKR2 b Q - 0 14",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 30 points and Black has 29: 30 − 29 = 1. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-016",
+      "fen": "rn2kb1r/pq4p1/3p3p/2p5/2P1p1P1/8/P3K2P/RN4R1 w kq - 0 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "a1",
+      "prompt": "How many legal moves does the White rook on a1 have? Count captures as moves.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-017",
+      "fen": "r4rk1/pB5p/2p4p/4qp2/3Pp1PP/P1P2p2/1P6/nN4K1 w - - 1 28",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f7",
+      "prompt": "How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on f7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-018",
+      "fen": "rnbqk2r/pp1nppbp/2p3p1/3p4/1QPPP3/2N5/PP3PPP/R1B1KBNR w KQkq - 2 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e4",
+      "prompt": "How many Black pieces geometrically attack e4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on e4: pawn on d5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-019",
+      "fen": "rnqk1b1r/pp2pBpp/2p5/8/3P4/5b2/PPP1KPPP/R1B2R2 w - - 0 12",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-11"
+      ],
+      "options": [
+        {
+          "value": "-12",
+          "label": "-12"
+        },
+        {
+          "value": "-11",
+          "label": "-11"
+        },
+        {
+          "value": "-10",
+          "label": "-10"
+        },
+        {
+          "value": "-9",
+          "label": "-9"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 23 points and Black has 34: 23 − 34 = -11. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-020",
+      "fen": "2k2r1r/2p2ppp/p1p4n/1p2p2Q/PP5b/8/N1PP1PPP/R1B1K1NR w KQ - 1 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "a2",
+      "prompt": "How many legal moves does the White knight on a2 have? Count captures as moves.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Nc3. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-021",
+      "fen": "r2qkb1r/1p2pppp/p1Np4/5P1n/5B2/2N5/PPP2PPP/R2QKB1R b KQkq - 2 9",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d8",
+      "prompt": "How many White pieces geometrically attack d8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d8: knight on c6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-022",
+      "fen": "rnb1qkr1/pp3p2/B1p1p1p1/3pn2p/1b1PN3/5NQ1/P1PB1PPP/3RK2R w K - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-023",
+      "fen": "r7/5p1k/7p/pp1P3b/5Q1N/4B3/PP2PP1P/1KR2B1R w - - 4 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "22"
+      ],
+      "options": [
+        {
+          "value": "21",
+          "label": "21"
+        },
+        {
+          "value": "22",
+          "label": "22"
+        },
+        {
+          "value": "23",
+          "label": "23"
+        },
+        {
+          "value": "24",
+          "label": "24"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 34 points and Black has 12: 34 − 12 = 22. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-024",
+      "fen": "r3k2r/pppbqppp/2n1pn2/3p4/2PP4/1PN2N2/P3PPPP/R1B1KB1R b KQkq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "f6",
+      "prompt": "How many legal moves does the Black knight on f6 have? Count captures as moves.",
+      "answers": [
+        "4"
+      ],
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Ng8, Nh5, Ng4, Ne4. There are 4. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-025",
+      "fen": "1nb1k2r/r2ppp1p/2p4b/q3P1B1/2pP1n2/2R1QN1P/PP3PP1/4KB1R w k - 5 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e8",
+      "prompt": "How many White pieces geometrically attack e8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on e8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-026",
+      "fen": "r1br4/p4kpp/1p6/n7/3P4/P3Q1Pp/PK3P1P/5R1R w - - 0 24",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h1",
+      "prompt": "How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-027",
+      "fen": "r1bqk1nr/pppp2pp/1bn5/4N3/2BPp3/2P5/PP3PPP/RNBQK2R w KQkq - 1 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 38 points and Black has 38: 38 − 38 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-028",
+      "fen": "rn5r/pp2pk1p/3b1n2/6p1/4P3/P1P3P1/2P2P1P/R4K1R b - - 0 15",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "f7",
+      "prompt": "How many legal moves does the Black king on f7 have? Count captures as moves.",
+      "answers": [
+        "6"
+      ],
+      "options": [
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Ke8, Kf8, Kg8, Kg7, Kg6, Ke6. There are 6. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-029",
+      "fen": "rn3k2/1p1b1p1p/2p2P1p/p2p4/B7/2N5/PPP3rP/R3K2R b - - 1 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d5",
+      "prompt": "How many White pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d5: knight on c3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-030",
+      "fen": "r1bqkbnr/1ppp1p1p/p1n3p1/4p3/B3P3/3P1N2/PPP2PPP/RNBQ1RK1 w - - 0 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f2",
+      "prompt": "How many Black pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on f2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-031",
+      "fen": "r1b1k2r/pp3ppp/2p2n2/3p4/1bp1q3/2N4N/PP1QPPPP/3RKB1R b Kkq - 3 14",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-2"
+      ],
+      "options": [
+        {
+          "value": "-3",
+          "label": "-3"
+        },
+        {
+          "value": "-2",
+          "label": "-2"
+        },
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 34 points and Black has 36: 34 − 36 = -2. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-032",
+      "fen": "1r3b1k/p1pR1p2/6p1/n1q1P2p/2p2P2/4B3/1PQ1N1PP/2K3NR w - - 3 22",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "c2",
+      "prompt": "How many legal moves does the White queen on c2 have? Count captures as moves.",
+      "answers": [
+        "11"
+      ],
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "11",
+          "label": "11"
+        },
+        {
+          "value": "12",
+          "label": "12"
+        },
+        {
+          "value": "13",
+          "label": "13"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Qb3, Qa4, Qc3, Qxc4, Qd3, Qe4, Qf5, Qxg6, Qd2, Qd1, Qb1. There are 11. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-033",
+      "fen": "1r4k1/pp3p2/2r5/6pp/P7/1Pn1PP2/2K2P1P/R6R b - - 4 26",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "c3",
+      "prompt": "How many White pieces geometrically attack c3? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on c3: king on c2. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-034",
+      "fen": "rnbqkb1r/ppp2ppp/4pn2/6B1/3PN3/8/PPP2PPP/R2QKBNR b KQkq - 0 5",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on d4: queen on d8. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-035",
+      "fen": "r1bqk2r/ppp2pb1/2n3pp/4p2n/N1Pp3P/P2P2P1/1P2PP2/R1BQKBNR w KQkq - 0 10",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 39 points and Black has 39: 39 − 39 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-036",
+      "fen": "1rb2rk1/pppp1ppn/2q4p/1B6/P3P3/2P2NQ1/1P1N1P1P/R3K2R w KQ - 3 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "b5",
+      "prompt": "How many legal moves does the White bishop on b5 have? Count captures as moves.",
+      "answers": [
+        "6"
+      ],
+      "options": [
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Ba6, Bxc6, Bc4, Bd3, Be2, Bf1. There are 6. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-037",
+      "fen": "rn1qk2r/pppb1pbp/3p1np1/4p3/2PPP3/2N1BP2/PP2N2P/R2QKB1R b KQkq - 2 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h8",
+      "prompt": "How many White pieces geometrically attack h8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on h8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-038",
+      "fen": "r3k1nr/p5pn/2pbp2p/1p4B1/3P3P/8/PPP2P2/R3K1N1 w Qkq - 0 18",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e5",
+      "prompt": "How many Black pieces geometrically attack e5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on e5: bishop on d6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-039",
+      "fen": "3r1bn1/2p3k1/ppp2pp1/4p3/2N1P1Q1/2PPB3/PP4PP/R2R2K1 w - - 3 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "14"
+      ],
+      "options": [
+        {
+          "value": "13",
+          "label": "13"
+        },
+        {
+          "value": "14",
+          "label": "14"
+        },
+        {
+          "value": "15",
+          "label": "15"
+        },
+        {
+          "value": "16",
+          "label": "16"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 32 points and Black has 18: 32 − 18 = 14. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-040",
+      "fen": "r2qkb1r/pp1bpppp/3p4/3n4/P2nP3/3B4/1PP2PPP/RNB1K2R b KQkq - 1 9",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "d7",
+      "prompt": "How many legal moves does the Black bishop on d7 have? Count captures as moves.",
+      "answers": [
+        "8"
+      ],
+      "options": [
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        },
+        {
+          "value": "10",
+          "label": "10"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Bc8, Be6, Bf5, Bg4, Bh3, Bc6, Bb5, Bxa4. There are 8. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-041",
+      "fen": "rn2k2r/2pb1ppp/p3pq2/8/2PPn1QP/4b3/P1P2PP1/2KR2N1 w kq - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: rook on d1. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-042",
+      "fen": "r6k/2N3pp/1p6/p1P1n3/P1P2p2/2RQ3P/1P6/4K2B b - - 2 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h1",
+      "prompt": "How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-043",
+      "fen": "rnbq1rk1/ppp1bpp1/4pn1p/3p4/2PP3B/2N2N2/PP2PPPP/R2QKB1R w KQ - 2 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 39 points and Black has 39: 39 − 39 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-044",
+      "fen": "rnb1qrk1/ppp5/6pp/3Pb3/P1P2Pn1/1Pp5/R3K1PP/2BQ1B1R b - - 1 14",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "b8",
+      "prompt": "How many legal moves does the Black knight on b8 have? Count captures as moves.",
+      "answers": [
+        "3"
+      ],
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Nd7, Nc6, Na6. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-045",
+      "fen": "r3k3/4bp1p/8/pPP1pp2/8/P4P2/3KNPBP/R3R3 w q - 0 24",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: knight on e2. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-046",
+      "fen": "r1b2qnr/ppppkpp1/2n5/2P1p1Np/2B1P3/8/P1PP1PPP/RNBQK2R w KQ - 1 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "g5",
+      "prompt": "How many Black pieces geometrically attack g5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on g5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-047",
+      "fen": "rn2kb1r/p5pp/B2p1q2/2p5/4p1P1/5P2/PPPQ3P/RN1K2R1 b kq - 1 15",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 31 points and Black has 31: 31 − 31 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-048",
+      "fen": "2rq1rk1/pp3ppp/2p5/8/4p3/PnPP1pPB/1P5P/RNB2K2 b - - 2 20",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "d8",
+      "prompt": "How many legal moves does the Black queen on d8 have? Count captures as moves.",
+      "answers": [
+        "13"
+      ],
+      "options": [
+        {
+          "value": "12",
+          "label": "12"
+        },
+        {
+          "value": "13",
+          "label": "13"
+        },
+        {
+          "value": "14",
+          "label": "14"
+        },
+        {
+          "value": "15",
+          "label": "15"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Qe8, Qe7, Qf6, Qg5, Qh4, Qd7, Qd6, Qd5, Qd4, Qxd3+, Qc7, Qb6, Qa5. There are 13. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-049",
+      "fen": "2b1k1r1/1pq5/3rp3/1P3p1p/3B2p1/1P3P1P/P2N4/R1Q3KR w - - 0 26",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-050",
+      "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e4",
+      "prompt": "How many Black pieces geometrically attack e4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on e4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-051",
+      "fen": "r3kbnr/1pp2ppp/p1p2q2/4pb2/4P3/2N5/PPPP1PPP/R1BQK1NR b KQkq - 7 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 36 points and Black has 36: 36 − 36 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-052",
+      "fen": "2b2r1k/r7/p3ppP1/1pp5/1B1RN2P/5nR1/PP2NP2/2K2B2 w - - 0 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "f1",
+      "prompt": "How many legal moves does the White bishop on f1 have? Count captures as moves.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Bg2, Bh3. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-053",
+      "fen": "rnbqk1r1/pppn1p1p/4p1p1/3pP3/1b1P4/2N3Q1/PPPB1PPP/R3KBNR b KQq - 1 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "a7",
+      "prompt": "How many White pieces geometrically attack a7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on a7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-054",
+      "fen": "r1bq1rk1/1p1n1pp1/7p/p2PN3/6P1/4B3/PPQ1PP1P/1K1R1B1R b - - 2 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "b2",
+      "prompt": "How many Black pieces geometrically attack b2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on b2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-055",
+      "fen": "3q1k1r/2p5/pr1pb1pp/4b3/1B1p3P/1P4P1/R1P2P2/1N3NK1 w - - 0 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-12"
+      ],
+      "options": [
+        {
+          "value": "-13",
+          "label": "-13"
+        },
+        {
+          "value": "-12",
+          "label": "-12"
+        },
+        {
+          "value": "-11",
+          "label": "-11"
+        },
+        {
+          "value": "-10",
+          "label": "-10"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 19 points and Black has 31: 19 − 31 = -12. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-056",
+      "fen": "rnbqk2r/2ppppbp/p7/1N1n2B1/2PP4/5N1P/PP2PPP1/R2QKBR1 b Qkq - 1 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "h8",
+      "prompt": "How many legal moves does the Black rook on h8 have? Count captures as moves.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Rg8, Rf8. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-057",
+      "fen": "rnb2rk1/pp3ppp/8/8/3P3p/P7/P1KQ1PPP/R4B1R b - - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e4",
+      "prompt": "How many White pieces geometrically attack e4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on e4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-058",
+      "fen": "b2k3r/5p2/1p1p1P1p/8/1p4P1/1P2B3/P1P2P1P/R3R1K1 b - - 0 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "b3",
+      "prompt": "How many Black pieces geometrically attack b3? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on b3: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-059",
+      "fen": "rn1qkb1r/pp2p2p/3ppnp1/8/4PB2/2N5/PPP2PPP/R2QKB1R w KQkq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 35 points and Black has 35: 35 − 35 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-060",
+      "fen": "rnb1kb2/1p3p1p/2p1pP1p/p2p1Pr1/B2P4/2N5/PPPQK2P/R6R w q - 2 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "e2",
+      "prompt": "How many legal moves does the White king on e2 have? Count captures as moves.",
+      "answers": [
+        "7"
+      ],
+      "options": [
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Kd3, Ke3, Kf3, Kf2, Kf1, Ke1, Kd1. There are 7. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-061",
+      "fen": "r6r/2k2p2/nppn3b/4p1pp/pP4P1/P4P1P/R2P1N2/1QBK3R b - - 2 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d5",
+      "prompt": "How many White pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-062",
+      "fen": "r1bqkb1r/ppp2ppp/2n2n2/3p4/2p5/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "a2",
+      "prompt": "How many Black pieces geometrically attack a2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on a2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-063",
+      "fen": "1rbq1r1k/p1p2pb1/2nn2p1/1pP4p/2B1PP2/P1N1B3/1PQ3PP/2KR2NR b - - 1 14",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 38 points and Black has 37: 38 − 37 = 1. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-064",
+      "fen": "4k2r/pp3p1p/1qr2n2/6p1/P7/2BnPp2/1P2KPPP/R6R w k - 0 19",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "e2",
+      "prompt": "How many legal moves does the White king on e2 have? Count captures as moves.",
+      "answers": [
+        "5"
+      ],
+      "options": [
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Kxd3, Kxf3, Kf1, Kd1, Kd2. There are 5. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-065",
+      "fen": "rnb3rk/1p1n4/q2NQ2p/2p1P1p1/2P3P1/3B3P/PP3P2/1R3K1R b - - 1 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "a8",
+      "prompt": "How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-066",
+      "fen": "rn3b1r/1pk1p1pp/p7/7q/PP1p3P/2P5/3K4/1R6 b - - 2 28",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "b1",
+      "prompt": "How many Black pieces geometrically attack b1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on b1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-067",
+      "fen": "r1bqk2r/pppp1ppn/2n4p/2b5/2BPPp2/2P2NP1/PP3P1P/RN1QK2R b KQkq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-3"
+      ],
+      "options": [
+        {
+          "value": "-4",
+          "label": "-4"
+        },
+        {
+          "value": "-3",
+          "label": "-3"
+        },
+        {
+          "value": "-2",
+          "label": "-2"
+        },
+        {
+          "value": "-1",
+          "label": "-1"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 36 points and Black has 39: 36 − 39 = -3. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-068",
+      "fen": "4r3/2k1p2p/p2p2P1/1p5N/1Pq5/P1b2Q2/5PPP/2BRK2R w - - 2 26",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "d1",
+      "prompt": "How many legal moves does the White rook on d1 have? Count captures as moves.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Rd2. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-069",
+      "fen": "r1b1k1nr/p1qnbpp1/2p1p2p/1p4N1/2BP3Q/5N2/PPP2PPP/R1B1KR2 b Qkq - 1 10",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e7",
+      "prompt": "How many White pieces geometrically attack e7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on e7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-070",
+      "fen": "2r1kbn1/1pp3p1/p1p1qp2/4p2r/2N1P3/3P4/PPP3PP/R1B1QRK1 b - - 1 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d3",
+      "prompt": "How many Black pieces geometrically attack d3? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on d3: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-071",
+      "fen": "r1b2k1r/p1p2p2/1p4p1/1B4Pp/1P1Pq3/1p2PN2/6PP/3R1RK1 w - - 0 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-7"
+      ],
+      "options": [
+        {
+          "value": "-8",
+          "label": "-8"
+        },
+        {
+          "value": "-7",
+          "label": "-7"
+        },
+        {
+          "value": "-6",
+          "label": "-6"
+        },
+        {
+          "value": "-5",
+          "label": "-5"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 22 points and Black has 29: 22 − 29 = -7. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-072",
+      "fen": "rnbqk2r/ppp2ppp/3bp3/3p4/3Pn2P/1P4N1/P1P2PP1/R2QKBNR b KQkq - 2 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "h8",
+      "prompt": "How many legal moves does the Black rook on h8 have? Count captures as moves.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Rg8, Rf8. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-073",
+      "fen": "r1q2r1k/2p3pp/ppn1N3/2PNpp2/2P5/3QB1P1/PP5P/R3K2B w Q - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "3"
+      ],
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: knight on e6, queen on d3, bishop on e3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-074",
+      "fen": "N1b1k1qr/1p4p1/3p3p/1p1n4/2N1p3/2P5/PP3PPP/R1B1KR2 b Q - 1 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "c4",
+      "prompt": "How many Black pieces geometrically attack c4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on c4: pawn on b5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-075",
+      "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPPP2/2N2N2/PP4PP/R1BQKB1R w KQ - 0 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 39 points and Black has 39: 39 − 39 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-076",
+      "fen": "rn2k2r/p3bp1p/5p2/1P2p3/8/P3Bq2/1P1KNPPP/R4B1R b kq - 3 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "h8",
+      "prompt": "How many legal moves does the Black rook on h8 have? Count captures as moves.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Rg8, Rf8. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-077",
+      "fen": "Q1b1k2r/3p4/p5p1/2p1N1np/1p2P3/B7/P2N1PPP/R5K1 b - - 0 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f7",
+      "prompt": "How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on f7: knight on e5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-078",
+      "fen": "rn1qkb1r/pb2pppp/1p1p4/8/4n1P1/1N6/PPP1BP1P/RNBQK2R w KQkq - 1 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h1",
+      "prompt": "How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-079",
+      "fen": "r1bq1rk1/pppp1ppp/8/n7/8/P1P2p2/1P1P1KPP/RNBQ1B2 w - - 0 13",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-4"
+      ],
+      "options": [
+        {
+          "value": "-5",
+          "label": "-5"
+        },
+        {
+          "value": "-4",
+          "label": "-4"
+        },
+        {
+          "value": "-3",
+          "label": "-3"
+        },
+        {
+          "value": "-2",
+          "label": "-2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 29 points and Black has 33: 29 − 33 = -4. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-080",
+      "fen": "r1b1kb1r/1pq2p1p/N3p3/6p1/8/1PP1Bp1P/P3Q1P1/RN4KR b kq - 0 18",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "f8",
+      "prompt": "How many legal moves does the Black bishop on f8 have? Count captures as moves.",
+      "answers": [
+        "7"
+      ],
+      "options": [
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Bg7, Bh6, Be7, Bd6, Bc5, Bb4, Ba3. There are 7. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-081",
+      "fen": "r1b4r/pp2k1p1/2p2p2/3pn3/P6P/8/1P3PP1/2RBbKNR w - - 1 22",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d5",
+      "prompt": "How many White pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-082",
+      "fen": "4k3/1p4b1/N1n1N2r/P3pp1p/3p2pP/Pn1P4/1R2PPB1/2BQK1R1 b - - 0 26",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e6",
+      "prompt": "How many Black pieces geometrically attack e6? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on e6: rook on h6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-083",
+      "fen": "r1b2r2/2p1bkp1/p1n1pp2/1p2Q2P/4N2P/4B3/PP2NP2/2KR1B1R b - - 0 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "11"
+      ],
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "11",
+          "label": "11"
+        },
+        {
+          "value": "12",
+          "label": "12"
+        },
+        {
+          "value": "13",
+          "label": "13"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 36 points and Black has 25: 36 − 25 = 11. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-084",
+      "fen": "r2k3r/p2b1p1p/2n2bp1/8/1PPpN3/5P2/P6P/1R2K2R w K - 0 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "b1",
+      "prompt": "How many legal moves does the White rook on b1 have? Count captures as moves.",
+      "answers": [
+        "5"
+      ],
+      "options": [
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Rb2, Rb3, Rc1, Rd1, Ra1. There are 5. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-085",
+      "fen": "rn1q1rk1/pp1b1ppp/2p5/2bP4/Q3pB2/3P1NP1/PP2PP1P/R3KB1R w KQ - 0 10",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d8",
+      "prompt": "How many White pieces geometrically attack d8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-086",
+      "fen": "1rbq1k1r/1pp3pp/p2p1b2/P2Bp3/3P4/1P4P1/2P2P1P/RNB2NK1 b - - 2 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "a5",
+      "prompt": "How many Black pieces geometrically attack a5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on a5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-087",
+      "fen": "r1q4r/pp2pkb1/8/Pn1p1PPp/1P5R/RP1b1N2/3B1PP1/4K3 w - - 4 26",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-10"
+      ],
+      "options": [
+        {
+          "value": "-11",
+          "label": "-11"
+        },
+        {
+          "value": "-10",
+          "label": "-10"
+        },
+        {
+          "value": "-9",
+          "label": "-9"
+        },
+        {
+          "value": "-8",
+          "label": "-8"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 23 points and Black has 33: 23 − 33 = -10. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-088",
+      "fen": "rnb1k2r/pp3ppp/2p2p2/7q/1b1P4/2P5/PP2KPPP/R1B1QBNR w kq - 1 9",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "c1",
+      "prompt": "How many legal moves does the White bishop on c1 have? Count captures as moves.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-089",
+      "fen": "N4b1r/1b1k1p2/1pnp1n1p/6p1/1p2P3/1P1Q1N2/P1P2PPP/R1B1R1K1 w - - 2 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f7",
+      "prompt": "How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on f7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-090",
+      "fen": "3r3k/p4p2/5N1p/1p2Q3/2P5/8/PP2PPPP/4KB1R b K - 0 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e2",
+      "prompt": "How many Black pieces geometrically attack e2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on e2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-091",
+      "fen": "rnb1kbr1/1ppq1p1p/4pP1p/p2p4/3P1P2/2N5/PPP3PP/R2QKBNR b KQq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 36 points and Black has 36: 36 − 36 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-092",
+      "fen": "rnn2b1r/ppk2p2/2p4p/4p1p1/6P1/PQ3P1N/RP1P3P/2B1K2R w K - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "c1",
+      "prompt": "How many legal moves does the White bishop on c1 have? Count captures as moves.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-093",
+      "fen": "1r6/2p1k3/bP3n2/p3p1Bp/3nP3/P5PP/2P5/R3K3 b - - 0 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-094",
+      "fen": "rnbqnrk1/pppp1pbp/6p1/4P3/2P1P3/2N5/PP3PPP/R1BQKBNR w KQ - 1 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "g2",
+      "prompt": "How many Black pieces geometrically attack g2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on g2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-095",
+      "fen": "2rqk2r/pp1n1p1p/5np1/2Qp4/8/4P3/PP2NPPP/R1B1K1NR b KQk - 0 11",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "3"
+      ],
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 34 points and Black has 31: 34 − 31 = 3. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-096",
+      "fen": "rnb2k2/1p1nppbr/q1p3pp/8/2PPN1P1/Q2B1N1P/PP3P2/R4K1R w - - 1 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "f1",
+      "prompt": "How many legal moves does the White king on f1 have? Count captures as moves.",
+      "answers": [
+        "4"
+      ],
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Ke2, Kg2, Kg1, Ke1. There are 4. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-097",
+      "fen": "rn3b1r/ppk1p1pp/4B3/3p4/PP6/6qP/2P1K3/R1B5 w - - 0 21",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "a8",
+      "prompt": "How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-098",
+      "fen": "5r1r/k1p2p1p/7p/pP6/1p5P/3P3Q/N4PP1/1R2K1NR w K - 0 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h1",
+      "prompt": "How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-099",
+      "fen": "2rk1br1/4p2p/p2p1Np1/1p3P1n/1P6/P1q1BQ2/2P1KPPP/R4B1R b - - 2 18",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "4"
+      ],
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 35 points and Black has 31: 35 − 31 = 4. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-100",
+      "fen": "r1bq2r1/pp3p1k/n1p1p3/B2pQ1PP/3PN3/P4N2/2P2P1R/3RK3 w - - 1 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "f3",
+      "prompt": "How many legal moves does the White knight on f3 have? Count captures as moves.",
+      "answers": [
+        "3"
+      ],
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Nh4, Ng1, Nfd2. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-101",
+      "fen": "r3kbnr/1pp3p1/p1p1qp1p/4p3/2N1P1b1/5N2/PPPP1PPP/R1BQ1RK1 w kq - 4 10",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e8",
+      "prompt": "How many White pieces geometrically attack e8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on e8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-102",
+      "fen": "r3k2r/pppb1pp1/6q1/4N1Bp/1P1Pn3/1p6/4PPPP/R3KB1R b Kkq - 0 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f2",
+      "prompt": "How many Black pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on f2: knight on e4. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-103",
+      "fen": "4k1r1/1b1ppp1p/n6B/2pnP3/r1NP4/3B1P1P/1P4P1/4KR2 w - - 1 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-4"
+      ],
+      "options": [
+        {
+          "value": "-5",
+          "label": "-5"
+        },
+        {
+          "value": "-4",
+          "label": "-4"
+        },
+        {
+          "value": "-3",
+          "label": "-3"
+        },
+        {
+          "value": "-2",
+          "label": "-2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 20 points and Black has 24: 20 − 24 = -4. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-104",
+      "fen": "rn1qk2r/ppp2ppp/4b3/2bNp3/2PP4/6P1/PP2QnBP/R1B1K1NR b KQkq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "e6",
+      "prompt": "How many legal moves does the Black bishop on e6 have? Count captures as moves.",
+      "answers": [
+        "6"
+      ],
+      "options": [
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Bd7, Bc8, Bf5, Bg4, Bh3, Bxd5. There are 6. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-105",
+      "fen": "r1b1k2r/1ppp2p1/1b2qn1p/8/3Pp3/N1P1N3/PP1B1PPP/R3KB1R w KQk - 10 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "a8",
+      "prompt": "How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-106",
+      "fen": "1r4nr/pp3k1p/3bp3/4nP2/P3P1pP/2P2RP1/2PK4/7R b - - 1 24",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h1",
+      "prompt": "How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-107",
+      "fen": "rn1qkb1r/pp1b1p1p/5p2/3Qp3/8/2P5/PP3PPP/R1B1KBNR w KQkq - 0 9",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 34 points and Black has 34: 34 − 34 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-108",
+      "fen": "r1b1k1nr/2ppBn2/p5p1/1p5p/4P3/b3QN2/Pp3PPP/RN3RK1 w - - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "g1",
+      "prompt": "How many legal moves does the White king on g1 have? Count captures as moves.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Kh1. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-109",
+      "fen": "r3k2r/1p2qppp/2p2nb1/p7/3P4/3NP1PB/P2R1P1P/4K2R b Kkq - 1 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: pawn on e3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-110",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/P1P2N2/1P1P1PPP/RNBQK2R b KQkq - 0 5",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h2",
+      "prompt": "How many Black pieces geometrically attack h2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-111",
+      "fen": "rnb1kb1r/1p2pppp/p2p4/q5B1/3NP3/1P6/P1P1QPPP/RN3K1R w kq - 4 11",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 35 points and Black has 35: 35 − 35 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-112",
+      "fen": "rnb1kb1r/pp4p1/2p1pp2/3P2N1/P7/8/1P2BPPP/R3K1NR b KQ - 0 14",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "e8",
+      "prompt": "How many legal moves does the Black king on e8 have? Count captures as moves.",
+      "answers": [
+        "3"
+      ],
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Ke7, Kd7, Kd8. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-113",
+      "fen": "N1bk4/1p4br/2n5/p3pp1p/1PPp2pP/P2P2nN/1R2PP2/2BQKB1R w K - 0 19",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f2",
+      "prompt": "How many White pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on f2: knight on h3, king on e1. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-114",
+      "fen": "rnb2rk1/1pp2ppp/p3p3/8/1bpqn2P/2N1B3/PPQ2PP1/R3KBNR w KQ - 2 10",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f2",
+      "prompt": "How many Black pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on f2: knight on e4. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-115",
+      "fen": "r2q2nr/pQ2kp1p/2nNbbp1/8/2PpPB2/5P2/PP5P/1R2K2R b K - 0 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-5"
+      ],
+      "options": [
+        {
+          "value": "-6",
+          "label": "-6"
+        },
+        {
+          "value": "-5",
+          "label": "-5"
+        },
+        {
+          "value": "-4",
+          "label": "-4"
+        },
+        {
+          "value": "-3",
+          "label": "-3"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 31 points and Black has 36: 31 − 36 = -5. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-116",
+      "fen": "1rk3nr/6p1/p3p3/2P3p1/1p6/P4N2/1PP2P1b/1R1K4 w - - 0 27",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "f3",
+      "prompt": "How many legal moves does the White knight on f3 have? Count captures as moves.",
+      "answers": [
+        "8"
+      ],
+      "options": [
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        },
+        {
+          "value": "10",
+          "label": "10"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Nd4, Ne5, Nxg5, Nh4, Nxh2, Ng1, Ne1, Nd2. There are 8. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-117",
+      "fen": "r1bqk1nr/1pp1b1pp/p1np4/P3p3/2BPp3/8/1PPN1PPP/RNBQ1RK1 w kq - 0 10",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "e5",
+      "prompt": "How many White pieces geometrically attack e5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on e5: pawn on d4. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-118",
+      "fen": "r2q1b1r/ppn1p2p/2b1kp2/P2p2P1/1P2P3/1P1B4/3NKPP1/R1B4R b - - 0 18",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d5",
+      "prompt": "How many Black pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "4"
+      ],
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on d5: queen on d8, knight on c7, bishop on c6, king on e6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-119",
+      "fen": "r2k3r/2p3pp/p3p3/5p1P/2PP4/3KP3/q1n3P1/5RN1 w - - 0 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-15"
+      ],
+      "options": [
+        {
+          "value": "-16",
+          "label": "-16"
+        },
+        {
+          "value": "-15",
+          "label": "-15"
+        },
+        {
+          "value": "-14",
+          "label": "-14"
+        },
+        {
+          "value": "-13",
+          "label": "-13"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 13 points and Black has 28: 13 − 28 = -15. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-120",
+      "fen": "r1bqkbnr/1pp2p1p/2np4/3Np1p1/1p2P3/1P3N2/P1PP1PPP/R1BQR1K1 b kq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "g8",
+      "prompt": "How many legal moves does the Black knight on g8 have? Count captures as moves.",
+      "answers": [
+        "3"
+      ],
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Nh6, Nf6, Nge7. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-121",
+      "fen": "N1bq1rk1/ppn2p2/5b1p/4p3/2P5/2p5/PPQ1PPPP/R3KB1R w KQ - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "c7",
+      "prompt": "How many White pieces geometrically attack c7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on c7: knight on a8. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-122",
+      "fen": "r1b2rk1/ppp5/6pp/q1P5/PnBQ1B2/1Pp1R3/6Pn/2K4R b - - 4 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h1",
+      "prompt": "How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-123",
+      "fen": "rnBqkb1r/ppp1nppp/8/4p3/8/P1N3PN/1P1PPP1P/R1BQK2R b KQkq - 2 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "3"
+      ],
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 38 points and Black has 35: 38 − 35 = 3. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-124",
+      "fen": "r1b3n1/2p1k1p1/1Pnp3B/p3p2p/3PP3/6P1/P1P2P1P/3RKR2 w - - 0 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "d1",
+      "prompt": "How many legal moves does the White rook on d1 have? Count captures as moves.",
+      "answers": [
+        "5"
+      ],
+      "options": [
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Rd2, Rd3, Rc1, Rb1, Ra1. There are 5. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-125",
+      "fen": "r3kb1r/pq4p1/n2p3p/2p5/2P1p1P1/8/P2NK1RP/R7 b kq - 3 24",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f7",
+      "prompt": "How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on f7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-126",
+      "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d1",
+      "prompt": "How many Black pieces geometrically attack d1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on d1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-127",
+      "fen": "rnbqk2r/pp1nppbp/2p3p1/8/2PPN3/Q7/PP3PPP/R1B1KBNR b KQkq - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 38 points and Black has 38: 38 − 38 = 0. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-128",
+      "fen": "rnqk1b1r/pp2pBpp/2p5/8/P2P4/8/1PPK1PbP/R1B2R2 b - - 0 13",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "d8",
+      "prompt": "How many legal moves does the Black king on d8 have? Count captures as moves.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Kd7, Kc7. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-129",
+      "fen": "2k2r1r/2p2ppp/p1p4n/1p2p1Q1/PP6/8/N1PP1PPP/1RB1K1NR b K - 0 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "c6",
+      "prompt": "How many White pieces geometrically attack c6? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on c6: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-130",
+      "fen": "r1q1kbr1/1p2pppp/p1Np4/5P1n/5B2/1PN5/P1P2PPP/R2QKB1R w KQq - 1 11",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-131",
+      "fen": "rnb1q1r1/pp3pk1/B1p1p1p1/3pQ2p/1B1PN3/5N2/P1P2PPP/3RK2R b K - 0 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "4"
+      ],
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 37 points and Black has 33: 37 − 33 = 4. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-132",
+      "fen": "8/5p1k/r6p/pp1P3b/6QN/4B3/PP2PP1P/1K1R1B1R b - - 7 26",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "h7",
+      "prompt": "How many legal moves does the Black king on h7 have? Count captures as moves.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Kh8. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-133",
+      "fen": "r3k2r/pppbqppp/4p3/3p4/1nPPn3/1P3N2/P3PPPP/R1B1KB1R w KQkq - 0 10",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: knight on f3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-134",
+      "fen": "1nb1k2r/r2ppp1p/2p4b/q2nP1B1/P1pP1Q2/2R2N1P/1P3PP1/4KB1R b k - 2 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "c3",
+      "prompt": "How many Black pieces geometrically attack c3? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on c3: queen on a5, knight on d5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-135",
+      "fen": "r1b1r3/p4kpp/1p6/n7/3P4/P5Pp/PK3P1P/5RR1 b - - 1 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-5"
+      ],
+      "options": [
+        {
+          "value": "-6",
+          "label": "-6"
+        },
+        {
+          "value": "-5",
+          "label": "-5"
+        },
+        {
+          "value": "-4",
+          "label": "-4"
+        },
+        {
+          "value": "-3",
+          "label": "-3"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 16 points and Black has 21: 16 − 21 = -5. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-136",
+      "fen": "r1b1k1nr/pppp2pp/1b6/8/1NBPp2q/2P5/PP3PPP/RNBQK2R b KQkq - 2 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "h4",
+      "prompt": "How many legal moves does the Black queen on h4 have? Count captures as moves.",
+      "answers": [
+        "12"
+      ],
+      "options": [
+        {
+          "value": "11",
+          "label": "11"
+        },
+        {
+          "value": "12",
+          "label": "12"
+        },
+        {
+          "value": "13",
+          "label": "13"
+        },
+        {
+          "value": "14",
+          "label": "14"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Qg5, Qf6, Qe7, Qd8, Qh5, Qh6, Qh3, Qxh2, Qg3, Qxf2+, Qg4, Qf4. There are 12. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-137",
+      "fen": "rn5r/pp2p2p/3b1nk1/8/4PPp1/P1P3P1/2P4P/R4K1R w - - 0 17",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "d4",
+      "prompt": "How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on d4: pawn on c3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-138",
+      "fen": "rn3k2/1p3p1p/2p2Prp/p2p4/B5b1/2N5/PPP4P/R3KR2 w - - 4 25",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f1",
+      "prompt": "How many Black pieces geometrically attack f1? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on f1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-139",
+      "fen": "r1bqkbnr/1ppp1p1p/p1n3p1/8/B2pP3/2P2N2/PP3PPP/RNBQ1RK1 b - - 0 8",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "-1"
+      ],
+      "options": [
+        {
+          "value": "-2",
+          "label": "-2"
+        },
+        {
+          "value": "-1",
+          "label": "-1"
+        },
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 38 points and Black has 39: 38 − 39 = -1. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-140",
+      "fen": "r1b1kq1r/pp3ppp/2p2n2/3p4/1bp5/2N1P2N/PP1Q1PPP/3RKB1R w Kkq - 1 16",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "e1",
+      "prompt": "How many legal moves does the White king on e1 have? Count captures as moves.",
+      "answers": [
+        "1"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Ke2. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    },
+    {
+      "id": "vision-141",
+      "fen": "1r5k/p1pR1p2/4P1p1/n1b4p/2p2P2/8/1PQ1N1PP/2K3NR b - - 0 23",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "f7",
+      "prompt": "How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "White attackers on f7: rook on d7, pawn on e6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-142",
+      "fen": "r5k1/pp3p2/2r5/6pp/P7/1Pn1PP2/1K3P1P/R6R w - - 7 28",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Attack map",
+      "target": "h2",
+      "prompt": "How many Black pieces geometrically attack h2? Count pinned pieces too; pawns attack diagonally.",
+      "answers": [
+        "0"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "hint": "Trace every pawn diagonal, knight jump, king step, and unblocked sliding ray toward the highlighted square.",
+      "explanation": "Black attackers on h2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement."
+    },
+    {
+      "id": "vision-143",
+      "fen": "rnbk1b1r/ppp2ppp/4p3/7n/3PN3/8/PPP2PPP/R2QKBNR w KQ - 0 7",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Material inventory",
+      "prompt": "What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings.",
+      "answers": [
+        "6"
+      ],
+      "options": [
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
+      ],
+      "hint": "Inventory one side at a time, then subtract Black’s total from White’s.",
+      "explanation": "White has 35 points and Black has 29: 35 − 29 = 6. This is a counting exercise; king safety and activity can change the actual evaluation."
+    },
+    {
+      "id": "vision-144",
+      "fen": "r1bqk2r/1pp2pb1/2n3pp/p3p2n/N1Pp3P/P2P2PN/1P2PP2/1RBQKB1R b Kkq - 1 11",
+      "kind": "choice",
+      "source": "Original legal practice position; chess.js 1.4.0 rules validation.",
+      "theme": "Legal mobility",
+      "target": "g7",
+      "prompt": "How many legal moves does the Black bishop on g7 have? Count captures as moves.",
+      "answers": [
+        "2"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "hint": "Check blockers and occupied destinations, then exclude any move that leaves your king in check.",
+      "explanation": "Legal moves: Bf8, Bf6. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move."
+    }
+  ]
+}
