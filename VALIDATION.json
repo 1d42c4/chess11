@@ -1,6 +1,6 @@
 {
   "repository": "chess11",
-  "checkedAt": "2026-09-05T14:53:34.195Z",
+  "checkedAt": "2026-09-05T14:58:39.545Z",
   "lessons": 24,
   "exercises": 144,
   "uniqueExercisePositions": 144,
@@ -10,7 +10,7 @@
   "exactTablebasePositions": 0,
   "pgnGames": 144,
   "htmlPages": 32,
-  "localReferencesChecked": 1070,
+  "localReferencesChecked": 1156,
   "status": "passed",
   "scope": "Checks content structure, position legality, accepted moves, principal variations, tablebase answer consistency, PGN parsing, and local links. Finite engine analysis is not a mathematical proof of uniqueness."
 }
