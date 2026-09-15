@@ -1,5 +1,5 @@
 [Event "See the Board: vision-001"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-001"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-001"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -11,7 +11,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d4: knight on f3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-002"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-002"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-002"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -23,7 +23,7 @@
 { How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on d4: queen on b6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-003"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-003"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-003"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -35,7 +35,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -3. White has 25 points and Black has 28: 25 − 28 = -3. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-004"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-004"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-004"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -47,7 +47,7 @@
 { How many legal moves does the Black rook on h7 have? Count captures as moves. Answer: 1. Legal moves: Rh8. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-005"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-005"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-005"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -59,7 +59,7 @@
 { How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-006"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-006"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-006"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -71,7 +71,7 @@
 { How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-007"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-007"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-007"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -83,7 +83,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -8. White has 13 points and Black has 21: 13 − 21 = -8. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-008"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-008"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-008"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -95,7 +95,7 @@
 { How many legal moves does the Black rook on h8 have? Count captures as moves. Answer: 0. Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-009"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-009"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-009"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -107,7 +107,7 @@
 { How many White pieces geometrically attack e6? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on e6: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-010"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-010"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-010"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -119,7 +119,7 @@
 { How many Black pieces geometrically attack g1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on g1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-011"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-011"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-011"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -131,7 +131,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -3. White has 36 points and Black has 39: 36 − 39 = -3. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-012"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-012"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-012"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -143,7 +143,7 @@
 { How many legal moves does the Black knight on c7 have? Count captures as moves. Answer: 4. Legal moves: Ne8, Ne6, Nb5, Na6. There are 4. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-013"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-013"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-013"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -155,7 +155,7 @@
 { How many White pieces geometrically attack f8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on f8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-014"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-014"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-014"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -167,7 +167,7 @@
 { How many Black pieces geometrically attack c3? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on c3: knight on d5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-015"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-015"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-015"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -179,7 +179,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 1. White has 30 points and Black has 29: 30 − 29 = 1. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-016"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-016"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-016"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -191,7 +191,7 @@
 { How many legal moves does the White rook on a1 have? Count captures as moves. Answer: 0. Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-017"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-017"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-017"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -203,7 +203,7 @@
 { How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on f7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-018"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-018"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-018"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -215,7 +215,7 @@
 { How many Black pieces geometrically attack e4? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on e4: pawn on d5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-019"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-019"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-019"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -227,7 +227,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -11. White has 23 points and Black has 34: 23 − 34 = -11. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-020"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-020"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-020"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -239,7 +239,7 @@
 { How many legal moves does the White knight on a2 have? Count captures as moves. Answer: 1. Legal moves: Nc3. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-021"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-021"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-021"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -251,7 +251,7 @@
 { How many White pieces geometrically attack d8? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d8: knight on c6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-022"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-022"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-022"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -263,7 +263,7 @@
 { How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-023"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-023"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-023"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -275,7 +275,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 22. White has 34 points and Black has 12: 34 − 12 = 22. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-024"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-024"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-024"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -287,7 +287,7 @@
 { How many legal moves does the Black knight on f6 have? Count captures as moves. Answer: 4. Legal moves: Ng8, Nh5, Ng4, Ne4. There are 4. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-025"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-025"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-025"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -299,7 +299,7 @@
 { How many White pieces geometrically attack e8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on e8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-026"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-026"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-026"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -311,7 +311,7 @@
 { How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-027"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-027"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-027"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -323,7 +323,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 38 points and Black has 38: 38 − 38 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-028"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-028"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-028"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -335,7 +335,7 @@
 { How many legal moves does the Black king on f7 have? Count captures as moves. Answer: 6. Legal moves: Ke8, Kf8, Kg8, Kg7, Kg6, Ke6. There are 6. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-029"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-029"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-029"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -347,7 +347,7 @@
 { How many White pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d5: knight on c3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-030"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-030"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-030"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -359,7 +359,7 @@
 { How many Black pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on f2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-031"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-031"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-031"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -371,7 +371,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -2. White has 34 points and Black has 36: 34 − 36 = -2. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-032"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-032"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-032"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -383,7 +383,7 @@
 { How many legal moves does the White queen on c2 have? Count captures as moves. Answer: 11. Legal moves: Qb3, Qa4, Qc3, Qxc4, Qd3, Qe4, Qf5, Qxg6, Qd2, Qd1, Qb1. There are 11. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-033"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-033"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-033"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -395,7 +395,7 @@
 { How many White pieces geometrically attack c3? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on c3: king on c2. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-034"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-034"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-034"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -407,7 +407,7 @@
 { How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on d4: queen on d8. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-035"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-035"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-035"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -419,7 +419,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 39 points and Black has 39: 39 − 39 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-036"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-036"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-036"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -431,7 +431,7 @@
 { How many legal moves does the White bishop on b5 have? Count captures as moves. Answer: 6. Legal moves: Ba6, Bxc6, Bc4, Bd3, Be2, Bf1. There are 6. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-037"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-037"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-037"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -443,7 +443,7 @@
 { How many White pieces geometrically attack h8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on h8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-038"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-038"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-038"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -455,7 +455,7 @@
 { How many Black pieces geometrically attack e5? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on e5: bishop on d6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-039"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-039"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-039"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -467,7 +467,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 14. White has 32 points and Black has 18: 32 − 18 = 14. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-040"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-040"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-040"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -479,7 +479,7 @@
 { How many legal moves does the Black bishop on d7 have? Count captures as moves. Answer: 8. Legal moves: Bc8, Be6, Bf5, Bg4, Bh3, Bc6, Bb5, Bxa4. There are 8. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-041"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-041"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-041"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -491,7 +491,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d4: rook on d1. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-042"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-042"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-042"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -503,7 +503,7 @@
 { How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-043"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-043"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-043"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -515,7 +515,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 39 points and Black has 39: 39 − 39 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-044"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-044"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-044"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -527,7 +527,7 @@
 { How many legal moves does the Black knight on b8 have? Count captures as moves. Answer: 3. Legal moves: Nd7, Nc6, Na6. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-045"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-045"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-045"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -539,7 +539,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d4: knight on e2. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-046"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-046"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-046"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -551,7 +551,7 @@
 { How many Black pieces geometrically attack g5? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on g5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-047"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-047"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-047"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -563,7 +563,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 31 points and Black has 31: 31 − 31 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-048"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-048"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-048"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -575,7 +575,7 @@
 { How many legal moves does the Black queen on d8 have? Count captures as moves. Answer: 13. Legal moves: Qe8, Qe7, Qf6, Qg5, Qh4, Qd7, Qd6, Qd5, Qd4, Qxd3+, Qc7, Qb6, Qa5. There are 13. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-049"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-049"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-049"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -587,7 +587,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-050"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-050"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-050"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -599,7 +599,7 @@
 { How many Black pieces geometrically attack e4? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on e4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-051"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-051"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-051"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -611,7 +611,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 36 points and Black has 36: 36 − 36 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-052"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-052"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-052"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -623,7 +623,7 @@
 { How many legal moves does the White bishop on f1 have? Count captures as moves. Answer: 2. Legal moves: Bg2, Bh3. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-053"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-053"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-053"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -635,7 +635,7 @@
 { How many White pieces geometrically attack a7? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on a7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-054"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-054"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-054"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -647,7 +647,7 @@
 { How many Black pieces geometrically attack b2? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on b2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-055"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-055"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-055"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -659,7 +659,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -12. White has 19 points and Black has 31: 19 − 31 = -12. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-056"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-056"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-056"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -671,7 +671,7 @@
 { How many legal moves does the Black rook on h8 have? Count captures as moves. Answer: 2. Legal moves: Rg8, Rf8. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-057"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-057"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-057"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -683,7 +683,7 @@
 { How many White pieces geometrically attack e4? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on e4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-058"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-058"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-058"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -695,7 +695,7 @@
 { How many Black pieces geometrically attack b3? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on b3: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-059"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-059"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-059"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -707,7 +707,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 35 points and Black has 35: 35 − 35 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-060"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-060"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-060"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -719,7 +719,7 @@
 { How many legal moves does the White king on e2 have? Count captures as moves. Answer: 7. Legal moves: Kd3, Ke3, Kf3, Kf2, Kf1, Ke1, Kd1. There are 7. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-061"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-061"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-061"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -731,7 +731,7 @@
 { How many White pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on d5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-062"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-062"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-062"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -743,7 +743,7 @@
 { How many Black pieces geometrically attack a2? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on a2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-063"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-063"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-063"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -755,7 +755,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 1. White has 38 points and Black has 37: 38 − 37 = 1. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-064"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-064"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-064"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -767,7 +767,7 @@
 { How many legal moves does the White king on e2 have? Count captures as moves. Answer: 5. Legal moves: Kxd3, Kxf3, Kf1, Kd1, Kd2. There are 5. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-065"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-065"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-065"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -779,7 +779,7 @@
 { How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-066"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-066"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-066"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -791,7 +791,7 @@
 { How many Black pieces geometrically attack b1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on b1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-067"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-067"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-067"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -803,7 +803,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -3. White has 36 points and Black has 39: 36 − 39 = -3. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-068"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-068"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-068"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -815,7 +815,7 @@
 { How many legal moves does the White rook on d1 have? Count captures as moves. Answer: 1. Legal moves: Rd2. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-069"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-069"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-069"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -827,7 +827,7 @@
 { How many White pieces geometrically attack e7? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on e7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-070"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-070"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-070"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -839,7 +839,7 @@
 { How many Black pieces geometrically attack d3? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on d3: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-071"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-071"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-071"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -851,7 +851,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -7. White has 22 points and Black has 29: 22 − 29 = -7. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-072"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-072"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-072"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -863,7 +863,7 @@
 { How many legal moves does the Black rook on h8 have? Count captures as moves. Answer: 2. Legal moves: Rg8, Rf8. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-073"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-073"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-073"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -875,7 +875,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 3. White attackers on d4: knight on e6, queen on d3, bishop on e3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-074"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-074"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-074"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -887,7 +887,7 @@
 { How many Black pieces geometrically attack c4? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on c4: pawn on b5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-075"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-075"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-075"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -899,7 +899,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 39 points and Black has 39: 39 − 39 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-076"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-076"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-076"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -911,7 +911,7 @@
 { How many legal moves does the Black rook on h8 have? Count captures as moves. Answer: 2. Legal moves: Rg8, Rf8. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-077"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-077"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-077"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -923,7 +923,7 @@
 { How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on f7: knight on e5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-078"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-078"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-078"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -935,7 +935,7 @@
 { How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-079"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-079"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-079"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -947,7 +947,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -4. White has 29 points and Black has 33: 29 − 33 = -4. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-080"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-080"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-080"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -959,7 +959,7 @@
 { How many legal moves does the Black bishop on f8 have? Count captures as moves. Answer: 7. Legal moves: Bg7, Bh6, Be7, Bd6, Bc5, Bb4, Ba3. There are 7. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-081"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-081"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-081"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -971,7 +971,7 @@
 { How many White pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on d5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-082"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-082"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-082"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -983,7 +983,7 @@
 { How many Black pieces geometrically attack e6? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on e6: rook on h6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-083"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-083"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-083"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -995,7 +995,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 11. White has 36 points and Black has 25: 36 − 25 = 11. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-084"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-084"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-084"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1007,7 +1007,7 @@
 { How many legal moves does the White rook on b1 have? Count captures as moves. Answer: 5. Legal moves: Rb2, Rb3, Rc1, Rd1, Ra1. There are 5. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-085"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-085"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-085"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1019,7 +1019,7 @@
 { How many White pieces geometrically attack d8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on d8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-086"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-086"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-086"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1031,7 +1031,7 @@
 { How many Black pieces geometrically attack a5? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on a5: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-087"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-087"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-087"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1043,7 +1043,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -10. White has 23 points and Black has 33: 23 − 33 = -10. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-088"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-088"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-088"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1055,7 +1055,7 @@
 { How many legal moves does the White bishop on c1 have? Count captures as moves. Answer: 0. Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-089"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-089"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-089"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1067,7 +1067,7 @@
 { How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on f7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-090"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-090"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-090"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1079,7 +1079,7 @@
 { How many Black pieces geometrically attack e2? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on e2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-091"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-091"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-091"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1091,7 +1091,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 36 points and Black has 36: 36 − 36 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-092"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-092"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-092"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1103,7 +1103,7 @@
 { How many legal moves does the White bishop on c1 have? Count captures as moves. Answer: 0. Legal moves: none. There are 0. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-093"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-093"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-093"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1115,7 +1115,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-094"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-094"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-094"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1127,7 +1127,7 @@
 { How many Black pieces geometrically attack g2? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on g2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-095"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-095"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-095"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1139,7 +1139,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 3. White has 34 points and Black has 31: 34 − 31 = 3. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-096"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-096"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-096"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1151,7 +1151,7 @@
 { How many legal moves does the White king on f1 have? Count captures as moves. Answer: 4. Legal moves: Ke2, Kg2, Kg1, Ke1. There are 4. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-097"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-097"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-097"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1163,7 +1163,7 @@
 { How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-098"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-098"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-098"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1175,7 +1175,7 @@
 { How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-099"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-099"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-099"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1187,7 +1187,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 4. White has 35 points and Black has 31: 35 − 31 = 4. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-100"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-100"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-100"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1199,7 +1199,7 @@
 { How many legal moves does the White knight on f3 have? Count captures as moves. Answer: 3. Legal moves: Nh4, Ng1, Nfd2. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-101"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-101"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-101"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1211,7 +1211,7 @@
 { How many White pieces geometrically attack e8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on e8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-102"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-102"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-102"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1223,7 +1223,7 @@
 { How many Black pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on f2: knight on e4. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-103"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-103"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-103"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1235,7 +1235,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -4. White has 20 points and Black has 24: 20 − 24 = -4. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-104"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-104"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-104"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1247,7 +1247,7 @@
 { How many legal moves does the Black bishop on e6 have? Count captures as moves. Answer: 6. Legal moves: Bd7, Bc8, Bf5, Bg4, Bh3, Bxd5. There are 6. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-105"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-105"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-105"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1259,7 +1259,7 @@
 { How many White pieces geometrically attack a8? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on a8: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-106"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-106"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-106"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1271,7 +1271,7 @@
 { How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-107"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-107"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-107"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1283,7 +1283,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 34 points and Black has 34: 34 − 34 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-108"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-108"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-108"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1295,7 +1295,7 @@
 { How many legal moves does the White king on g1 have? Count captures as moves. Answer: 1. Legal moves: Kh1. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-109"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-109"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-109"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1307,7 +1307,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d4: pawn on e3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-110"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-110"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-110"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1319,7 +1319,7 @@
 { How many Black pieces geometrically attack h2? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-111"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-111"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-111"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1331,7 +1331,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 35 points and Black has 35: 35 − 35 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-112"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-112"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-112"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1343,7 +1343,7 @@
 { How many legal moves does the Black king on e8 have? Count captures as moves. Answer: 3. Legal moves: Ke7, Kd7, Kd8. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-113"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-113"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-113"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1355,7 +1355,7 @@
 { How many White pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally. Answer: 2. White attackers on f2: knight on h3, king on e1. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-114"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-114"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-114"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1367,7 +1367,7 @@
 { How many Black pieces geometrically attack f2? Count pinned pieces too; pawns attack diagonally. Answer: 1. Black attackers on f2: knight on e4. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-115"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-115"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-115"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1379,7 +1379,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -5. White has 31 points and Black has 36: 31 − 36 = -5. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-116"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-116"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-116"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1391,7 +1391,7 @@
 { How many legal moves does the White knight on f3 have? Count captures as moves. Answer: 8. Legal moves: Nd4, Ne5, Nxg5, Nh4, Nxh2, Ng1, Ne1, Nd2. There are 8. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-117"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-117"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-117"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1403,7 +1403,7 @@
 { How many White pieces geometrically attack e5? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on e5: pawn on d4. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-118"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-118"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-118"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1415,7 +1415,7 @@
 { How many Black pieces geometrically attack d5? Count pinned pieces too; pawns attack diagonally. Answer: 4. Black attackers on d5: queen on d8, knight on c7, bishop on c6, king on e6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-119"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-119"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-119"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1427,7 +1427,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -15. White has 13 points and Black has 28: 13 − 28 = -15. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-120"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-120"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-120"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1439,7 +1439,7 @@
 { How many legal moves does the Black knight on g8 have? Count captures as moves. Answer: 3. Legal moves: Nh6, Nf6, Nge7. There are 3. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-121"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-121"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-121"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1451,7 +1451,7 @@
 { How many White pieces geometrically attack c7? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on c7: knight on a8. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-122"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-122"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-122"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1463,7 +1463,7 @@
 { How many Black pieces geometrically attack h1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-123"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-123"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-123"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1475,7 +1475,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 3. White has 38 points and Black has 35: 38 − 35 = 3. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-124"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-124"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-124"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1487,7 +1487,7 @@
 { How many legal moves does the White rook on d1 have? Count captures as moves. Answer: 5. Legal moves: Rd2, Rd3, Rc1, Rb1, Ra1. There are 5. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-125"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-125"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-125"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1499,7 +1499,7 @@
 { How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on f7: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-126"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-126"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-126"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1511,7 +1511,7 @@
 { How many Black pieces geometrically attack d1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on d1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-127"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-127"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-127"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1523,7 +1523,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 0. White has 38 points and Black has 38: 38 − 38 = 0. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-128"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-128"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-128"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1535,7 +1535,7 @@
 { How many legal moves does the Black king on d8 have? Count captures as moves. Answer: 2. Legal moves: Kd7, Kc7. There are 2. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-129"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-129"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-129"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1547,7 +1547,7 @@
 { How many White pieces geometrically attack c6? Count pinned pieces too; pawns attack diagonally. Answer: 0. White attackers on c6: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-130"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-130"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-130"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1559,7 +1559,7 @@
 { How many Black pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on d4: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-131"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-131"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-131"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1571,7 +1571,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 4. White has 37 points and Black has 33: 37 − 33 = 4. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-132"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-132"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-132"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1583,7 +1583,7 @@
 { How many legal moves does the Black king on h7 have? Count captures as moves. Answer: 1. Legal moves: Kh8. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-133"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-133"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-133"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1595,7 +1595,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d4: knight on f3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-134"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-134"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-134"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1607,7 +1607,7 @@
 { How many Black pieces geometrically attack c3? Count pinned pieces too; pawns attack diagonally. Answer: 2. Black attackers on c3: queen on a5, knight on d5. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-135"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-135"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-135"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1619,7 +1619,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -5. White has 16 points and Black has 21: 16 − 21 = -5. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-136"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-136"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-136"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1631,7 +1631,7 @@
 { How many legal moves does the Black queen on h4 have? Count captures as moves. Answer: 12. Legal moves: Qg5, Qf6, Qe7, Qd8, Qh5, Qh6, Qh3, Qxh2, Qg3, Qxf2+, Qg4, Qf4. There are 12. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-137"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-137"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-137"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1643,7 +1643,7 @@
 { How many White pieces geometrically attack d4? Count pinned pieces too; pawns attack diagonally. Answer: 1. White attackers on d4: pawn on c3. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-138"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-138"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-138"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1655,7 +1655,7 @@
 { How many Black pieces geometrically attack f1? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on f1: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-139"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-139"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-139"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1667,7 +1667,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: -1. White has 38 points and Black has 39: 38 − 39 = -1. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-140"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-140"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-140"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1679,7 +1679,7 @@
 { How many legal moves does the White king on e1 have? Count captures as moves. Answer: 1. Legal moves: Ke2. There are 1. Legality was checked with chess.js; attack geometry alone is not enough when king safety restricts a move. } *
 
 [Event "See the Board: vision-141"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-141"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-141"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1691,7 +1691,7 @@
 { How many White pieces geometrically attack f7? Count pinned pieces too; pawns attack diagonally. Answer: 2. White attackers on f7: rook on d7, pawn on e6. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-142"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-142"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-142"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1703,7 +1703,7 @@
 { How many Black pieces geometrically attack h2? Count pinned pieces too; pawns attack diagonally. Answer: 0. Black attackers on h2: none. This is an attack-map question, not a claim that every attacking piece can legally move. A pin can restrict legal movement. } *
 
 [Event "See the Board: vision-143"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-143"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-143"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]
@@ -1715,7 +1715,7 @@
 { What is White’s material total minus Black’s? Use pawn 1, knight 3, bishop 3, rook 5, queen 9; do not count kings. Answer: 6. White has 35 points and Black has 29: 35 − 29 = 6. This is a counting exercise; king safety and activity can change the actual evaluation. } *
 
 [Event "See the Board: vision-144"]
-[Site "https://knightway8.github.io/chess11/practice.html?id=vision-144"]
+[Site "https://1d42c4.github.io/chess11/practice.html?id=vision-144"]
 [Date "2026.09.05"]
 [Round "-"]
 [White "Human learner"]

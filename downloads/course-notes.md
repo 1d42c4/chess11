@@ -2,7 +2,7 @@
 
 A human guide to noticing what matters
 
-Live course: https://knightway8.github.io/chess11/
+Live course: https://1d42c4.github.io/chess11/
 
 ## 01. A map you can think on
 
